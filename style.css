@@ -1,0 +1,230 @@
+body {
+	background-color: white;
+}
+
+.letter-box {
+	position: absolute;
+	top: 25%;
+	left: calc(50% - 245px);
+	width: 490px;
+	height: 22.5vw;
+	box-sizing: border-box;
+}
+
+.m-left-pos {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+  border-bottom: 80px solid transparent;
+	border-top: 200px solid #2d9ffd;
+}
+
+.m-right-pos {
+	position: absolute;
+	left: 20px;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 120px solid #2d9ffd;
+}
+
+.m-left-neg {
+	position: absolute;
+	left: 50px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 65px solid transparent;
+	border-top: 60px solid #ffffff;
+}
+.m-right-neg {
+	position: absolute;
+	left: 160px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 200px solid #2d9ffd;
+}
+
+
+.e-str {
+	position: absolute;
+	left: 0px;
+  right: 0px;
+	top: 60px;
+  bottom: 100px;
+	width: 0px;
+	height: 0px;
+  border-left: 30px solid transparent;
+  border-bottom: 160px solid #2d9ffd;
+	background-color: #2d9ffd;
+}
+
+.e-neg {
+  position: abusolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+  bottom: 140px;
+  width: 120px;
+  height:40px;
+	border-bottom: 35px solid #2d9ffd;
+}
+
+.l-str {
+  position: abusolute;
+	left: 40px;
+	right: 0px;
+  height: 190px;
+  bottom: 0px;
+  width: 120px;
+	border-bottom: 20px solid #2d9ffd;
+}
+
+.l-str {
+  position: abusolute;
+	left: 40px;
+	right: 0px;
+  height: 190px;
+  bottom: 0px;
+  width: 120px;
+	border-bottom: 20px solid #2d9ffd;
+}
+
+
+.l-neg {
+	position: absolute;
+	left: 0px;
+  right: 0px;
+	top: 0px;
+  bottom: 140px;
+	width: 0px;
+	height: 0px;
+  border-left: 30px solid transparent;
+  border-bottom: 200px solid #2d9ffd;
+	background-color: #2d9ffd;
+}
+
+.t-str {
+  position: abusolute;
+	left: 40px;
+	right: 40px;
+  height: 0px;
+  bottom: 0px;
+  width: 140px;
+	border-bottom: 30px solid #2d9ffd;
+}
+
+
+.t-neg {
+	position: absolute;
+	left: 50px;
+  right: 0px;
+	top: 0px;
+  bottom: 140px;
+	width: 0px;
+	height: 0px;
+  border-left: 30px solid transparent;
+  border-bottom: 200px solid #2d9ffd;
+	background-color: #2d9ffd;
+}
+
+
+
+#M {
+	position: absolute;
+    z-index: 99;
+    width: 290px;
+    height: 200px;
+}
+
+#M:hover {
+	animation-name: identifier;
+    animation-iteration-count: infinite;
+	animation-duration: 4s;
+}
+
+#L {
+	position: absolute;
+    z-index: 99;
+ left: 490px;
+    width: 200px;
+    height: 200px;
+}
+
+#L:hover {
+	animation-name: example;
+    animation-iteration-count: 2;
+	animation-duration: 4s;
+  animation-direction: alternate-reverse; 
+}
+
+#T {
+	position: absolute;
+    z-index: 99;
+ left: 620px;
+    width: 200px;
+    height: 200px;
+}
+
+#T:hover {
+	animation-name: mymove;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+
+#E {
+    z-index: 99;
+	position: absolute;
+	left: 290px;
+    width: 200px;
+    height: 200px;
+}
+
+#E:hover {
+  animation-name: mymove;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+}
+
+@keyframes mymove {
+   0%   {top: 0px;}
+  25%  {top: 200px;}
+  50%  {top: 100px;}
+  75%  {top: 200px;}
+  100% {top: 0px;}
+}
+
+@keyframes {
+  from {background-color: white;}
+  to {background-color: yellow;}
+}
+
+@keyframes identifier {
+  0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; bottom:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
+@keyframes example {
+  0%   {background-color: red; left:0px;}
+  50%  {background-color: yellow; left:200px;}
+  100% {background-color: red; left:0px;}
+}
